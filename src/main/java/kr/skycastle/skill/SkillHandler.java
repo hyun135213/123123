@@ -3,6 +3,7 @@ package kr.skycastle.skill;
 import kr.skycastle.item.SkillWeaponItem;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.network.packet.s2c.play.EntityVelocityUpdateS2CPacket;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -29,7 +30,7 @@ public final class SkillHandler {
         // 돌진
         if (skill.dash > 0) {
             player.setVelocity(look.x * skill.dash, 0.1, look.z * skill.dash);
-            player.velocityModified = true;
+            player.networkHandler.sendPacket(new EntityVelocityUpdateS2CPacket(player));
         }
 
         // 타격 범위
