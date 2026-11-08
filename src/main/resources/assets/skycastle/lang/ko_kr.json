@@ -1,0 +1,15 @@
+{
+  "item.skycastle.one_handed_sword": "한손검",
+  "item.skycastle.rapier": "레이피어",
+  "item.skycastle.dagger": "단검",
+  "item.skycastle.greatsword": "양손검",
+
+  "skill.skycastle.vertical": "수직 베기",
+  "skill.skycastle.linear": "직선 찌르기",
+  "skill.skycastle.flurry": "연속 베기",
+  "skill.skycastle.whirlwind": "회전 베기",
+
+  "key.skycastle.skill": "소드 스킬 발동",
+  "key.category.skycastle.main": "스카이 캐슬",
+  "hud.skycastle.key_hint": "[%s] 스킬 발동"
+}

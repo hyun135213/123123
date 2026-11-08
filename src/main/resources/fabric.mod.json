@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "skycastle",
+  "version": "${version}",
+  "name": "스카이 캐슬",
+  "description": "검과 스킬로 하늘 성을 오르는 RPG 모드",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["kr.skycastle.SkyCastle"],
+    "client": ["kr.skycastle.client.SkyCastleClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
